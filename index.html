@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Code Player</title>
+		<link rel="icon" href="favicon.png">
+		<link rel="stylesheet" href="css/prism.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="menuBar">
+				<div id="logo">
+					<i class="fa fa-code fa-2x"></i><span>CodePlayer</span>
+				</div>
+				
+				<div id="buttons">
+					<button id="run">Run<i class="fa fa-play-circle-o"></i></button>
+				</div>
+				
+				<ul id="langs">
+					<li class="toggle seclected">HTML</li>
+					<li class="toggle">CSS</li>
+					<li class="toggle">JS</li>
+					<li class="toggle seclected">Result</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="clear"></div>
+		<div class="codeContainer" id="HTML">
+			<div class="codelabel">HTML</div>
+			<textarea class="code language-html" id="htmlCode" spellcheck=false>HTML Code</textarea>
+		</div>
+		
+		<div class="codeContainer" id="CSS">
+			<div class="codelabel">CSS</div>
+			<textarea class="code language-css" id="cssCode" spellcheck=false>CSS Code</textarea>
+		</div>
+		
+		<div class="codeContainer" id="JS">
+			<div class="codelabel">JS</div>
+			<textarea class="code language-javascript" id="jsCode" spellcheck=false>JS Code</textarea>
+		</div>
+		
+		<div class="codeContainer" id="Result">
+			<div class="codelabel">Result</div>
+			<iframe id="resultFrame"></iframe>
+		</div>
+		
+		<script src="js/prism.js" data-manual></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
